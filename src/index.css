@@ -5,8 +5,6 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   flex-direction: column;
   background-color: #f0f0f0;
 }
@@ -174,4 +172,39 @@ button:hover {
   position: relative;
   bottom: 0;
   top: 100px;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    justify-content: center;
+  }
+
+  .board {
+    gap: 5px;
+    transform: scale(1);
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .square {
+    font-size: 18px;
+  }
+
+  .status {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .botones {
+    text-align: center;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .winner-text {
+    font-size: 28px;
+  }
 }
